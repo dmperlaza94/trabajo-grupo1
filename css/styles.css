@@ -1,0 +1,89 @@
+#page{
+    height: 1000px;
+    display: grid;
+    grid-template-areas: "header header"
+    "cuerpo cuerpo"
+    "pie pie"
+    ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 200px;
+}
+header{
+    background-color: aqua;
+    grid-area: header;
+
+   
+}
+main{
+    background-color: blue;
+    grid-area: cuerpo;
+   
+}
+
+footer{
+    background-color:hsl(192, 100%, 9%); 
+    grid-area: pie;  
+    font-family: 'Open Sans', sans-serif ;
+}
+#pie-pagina{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+    font-size: 18px;
+   
+      
+} 
+.izquierda, .derecha, .centro{
+color: white;
+    width:33%;
+}
+.numero1{ 
+        display: flex;
+}
+.logo-footer{
+    border-style: none;
+    border-color:hsl(192, 100%, 9%);
+    margin: 100px 120px 0px 70px;
+}
+
+.icon{ padding-right: 50px;
+    margin: 50px 0px 40px 70px;  
+}
+.info{
+    margin-top: 30px;
+}
+.centro{
+    display: flex;
+}
+.enlaces-info1{
+    align-self: center;
+    margin-left: 80px;
+}
+li{
+    line-height: 30px;
+    list-style: none;
+}
+.derecha{
+    display: inline;
+    padding-top: 200px;
+}
+.red-social{
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.iconos-redes{ font-size: 20px;
+}
+.arriba{
+    align-self: center;
+}
+.abajo{
+    padding-top: 200px;
+   align-self: flex-end;
+
+}
+
+
+

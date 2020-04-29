@@ -6,7 +6,7 @@
     "pie pie"
     ;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 200px;
+    grid-template-columns: 1fr 1fr;
 }
 header{
     background-color: aqua;
@@ -15,12 +15,47 @@ header{
    
 }
 main{
-    background-color: blue;
     grid-area: cuerpo;
+    
    
 }
+.contenedor_section{
+    margin: 50px 150px 10px 150px;
+    border-radius: 25px;
+    box-shadow:  0px 0px 10px hsl(208, 11%, 55%);
+}
+.container-padre{
+    display: flex;
+ 
+}
+.container-img{
+    width: 50%;
 
+}
+.imagen-cuerpo{
+    margin-left: 50px;
+    width: 500px;
+    height: auto;
+    padding: 70px 20px 70px 20px;
+    
+}
+.container-info{
+    width: 50%;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif ;
+    font-weight: 400;
+    padding: 150px 70px 100px 200px;
+}
+.titulo{
+    font-size: 25px;
+    font-weight: 600;
+}
+.text-info{
+    color: hsl(208, 11%, 55%);
+}
 footer{
+    margin-top: 500px;
     background-color:hsl(192, 100%, 9%); 
     grid-area: pie;  
     font-family: 'Open Sans', sans-serif ;
@@ -65,10 +100,10 @@ li{
     list-style: none;
 }
 .derecha{
-    display: inline;
     padding-top: 200px;
 }
 .red-social{
+    display: inline;
     border-radius: 50%;
     background: transparent;
     color: white;
@@ -86,4 +121,55 @@ li{
 }
 
 
+@media screen and (max-width:950px )
+{
+       .contenedor_section{
+        margin: 50px 150px 10px 150px;
+        border-radius: 25px;
+        box-shadow:  0px 0px 10px hsl(208, 11%, 55%);
+        padding-bottom: 50px;}
+.container-padre{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-img{
+    width: 50%;
 
+}
+.imagen-cuerpo{
+    width: 350px;
+    height: auto;
+    padding: 70px 20px 0px 20px;
+    
+    
+}
+.container-info{
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif ;
+    font-weight: 400;
+    padding: 150px 70px 0px 100px;
+}
+.centro{
+    padding-right: 0px;
+    display: inline-block;
+}
+#pie-pagina{
+    display: inline;
+    color: white;
+    font-size: 18px;
+    }
+.numero1{ 
+    display: flex;
+}
+.logo-footer{
+border-style: none;
+border-color:hsl(192, 100%, 9%);
+margin: 100px 120px 0px 0px;
+}
+
+.icon{ padding-right: 50px;
+margin: 50px 0px 40px 0px;  
+}
+}
